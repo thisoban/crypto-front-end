@@ -1,33 +1,49 @@
-<template>
-  <div class="about">
-    <h1>This is an crypto page</h1>
+<script>
+import CryptoComponentnVue from "../components/CryptoComponentn.vue"
+export default {
+  components: {
+    CryptoComponentnVue
+  }
+}
+</script>
 
+<template>
     <div class="cryptolistings">
-      <table>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+      <tbody>
         <tr>
-            <th>ranking number </th>
-            <th>name </th>
-            <th> price </th>
-            <th>24% </th>
-            <th>7d% </th>
-            <th>market cap </th>
-            <th>volume(24h) </th>
-            <th>circulating supply </th>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
         </tr>
-        
-      </table>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+       <CryptoComponentnVue></CryptoComponentnVue>
+      </tbody>
+    </table>
     </div>
-  </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 table{
   width: 100%;
 }
