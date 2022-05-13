@@ -11,6 +11,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/user"> User</RouterLink>
         <RouterLink to="/crypto"> crypto</RouterLink>
+         <!-- <RouterLink to="/firebase"> firebase</RouterLink> -->
       </nav>
      
   </header>

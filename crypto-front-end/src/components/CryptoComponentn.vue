@@ -14,7 +14,7 @@ import crypto from "../temp/crypto.json"
   }
 }
 
-</script>
+</script>ghn
 <template >
   <!-- {{data}}  -->
   <tr v-for="(item, index) in data.data" :key="item.id">
